@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+body{
+    background-image: url("IMG.png");
+}
+</style>
+<body>
+    <div class="container">
+        <nav>Student Enrollment Form</nav>
+        <div class="input-form">
+            <h1>Register Here</h1>
+            <form action="#" id="input-form">
+                <div class="input-group">
+                    <input type="text" class="input-field" id="name" required autofocus>
+                    <label for="name">Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" class="input-field" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="website" class="input-field" id="website" required>
+                    <label for="website">Website</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" class="input-field" id="addr" required>
+                    <label for="addr">Address</label>
+                </div>
+                <div class="input-select">
+                    <label for="gender" class="Label">Gender</label><br>
+                    <input type="radio" id="male" value="Male" name="gender">Male
+                    <input type="radio" id="female" value="Female" name="gender">Female
+                </div>
+                <div class="input-select">
+                    <label for="skills" class="Label">Skills</label><br>
+                    <input type="checkbox" name="skills" id="HTML" value="HTML">HTML
+                    <input type="checkbox" name="skills" id="CSS" value="CSS">CSS
+                    <input type="checkbox" name="skills" id="Java" value="Java">Java
+                </div>
+                <div class="buttons">
+                    <button type="button" id="add-btn">REGISTER</button>
+                    <button type="button" id="delete-btn">DELETE</button>
+                </div>
+            </form>
+        </div>
+        <div class="line"></div>
+        <div class="table">
+            <h1>Enrolled Students</h1>
+            <div class="scroll">
+                <table id="display">
+                    <tr>
+                        <th>Description</th>
+                        <th>Image</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
